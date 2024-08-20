@@ -5,7 +5,7 @@ from rdflib.namespace import XSD
 file_path = "data/getPopularMovies.json"
 
 # Load the JSON data from the file
-with open(file_path, 'r') as f:
+with open(file_path, 'r',encodings="utf8") as f:
     data = json.load(f)
 
 # Define a namespace
